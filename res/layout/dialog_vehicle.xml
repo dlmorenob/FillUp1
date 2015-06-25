@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="250dp" 
+    android:layout_height="400dp"
+    android:orientation="vertical" android:showDividers="middle|beginning|end" android:weightSum="1">
+        
+    <LinearLayout 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:orientation="vertical"
+	    android:paddingLeft="8dip" 
+	    android:paddingRight="8dip"
+	    android:paddingBottom="8dip" android:layout_weight="1.02">
+	    
+	    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vehicle_name_label" 
+            />
+
+        <EditText
+            android:id="@+id/textVehicleName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences"
+            android:maxLength="20"
+            />
+        
+   	    <TextView
+   	        android:id="@+id/labelVehicleTankSize"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vehicle_tanksize_label" 
+            />
+
+        <EditText
+            android:id="@+id/textVehicleTankSize"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:digits="0123456789.,"
+            />
+        <TextView android:id="@+id/labelVehicleBrand" android:layout_width="fill_parent"
+                  android:layout_height="wrap_content" android:text="@string/vehicle_brand_label"/>
+        <EditText android:id="@+id/textVehicleBrand" android:layout_width="fill_parent"
+                  android:layout_height="wrap_content" android:inputType="text"/>
+        <TextView android:id="@+id/labelVehiclePlate" android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  android:text="@string/vehicle_plate_label"/>
+        <EditText android:id="@+id/textVehiclePlate" android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  android:inputType="text"/>
+        <TextView android:id="@+id/labelVehicleType" android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  android:text="@string/vehicle_type_label"/>
+        <EditText android:id="@+id/textVehicleType" android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  android:inputType="text"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:background="@color/dialog_buttonbar_bg"
+	    android:padding="5dip"
+        android:nestedScrollingEnabled="true">
+
+        <Button
+            android:id="@+id/buttonOK"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/ok_label"
+            android:layout_gravity="bottom"/>
+
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel_label"
+            android:layout_gravity="bottom"/>
+
+    </LinearLayout>
+
+</LinearLayout>
